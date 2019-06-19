@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="svnadvanceproject.sol.svn.com.expenditure">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/em"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/em"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".expense">
+            <intent-filter>
+                <action android:name="android.intent.action.expense" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".income">
+            <intent-filter>
+                <action android:name="android.intent.action.income" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".setting">
+            <intent-filter>
+                <action android:name="android.intent.action.setting" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".transaction">
+        <intent-filter>
+            <action android:name="android.intent.action.transaction" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+        <activity android:name=".TransactionList">
+            <intent-filter>
+                <action android:name="android.intent.action.transactionlist" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".contact">
+            <intent-filter>
+                <action android:name="android.intent.action.contact" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

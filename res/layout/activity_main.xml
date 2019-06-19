@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    >
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/canteenYellow"
+        android:textSize="30dp"
+        android:text="SEPTEMBER 2018"
+
+        />
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel1"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:text="Income: "
+        android:fontFamily="cursive"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/canteenYellow"
+        android:id="@+id/text_income"
+        />
+    <TextView
+        android:textColor="@color/canteenYellow"
+        android:layout_width="wrap_content"
+        android:paddingLeft="50dp"
+        android:fontFamily="cursive"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Expenses: "
+        android:id="@+id/text_expenses"
+        />
+    <TextView
+        android:textColor="@color/canteenYellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:fontFamily="cursive"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Balance: "
+        android:id="@+id/text_balance"
+        /> </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel2"
+        android:layout_below="@+id/rel1"
+        android:layout_centerHorizontal="true"
+        >
+
+
+        <ImageButton
+            android:background="@drawable/income"
+            android:layout_width="180dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:text="Add Income"
+            android:id="@+id/image_income"
+            />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/image_income"
+            android:id="@+id/txt_image_income"
+            android:text="ADD INCOME"
+            android:textColor="@color/canteenYellow"
+            android:gravity="center"/>
+
+        <ImageButton
+           android:background="@drawable/expend"
+            android:layout_toRightOf="@+id/image_income"
+            android:layout_width="180dp"
+            android:layout_height="140dp"
+            android:text="Add Expense"
+            android:id="@+id/image_expense"
+            />
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_image_income"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/image_expense"
+            android:id="@+id/txt_image_expense"
+            android:text="ADD EXPENSE"
+            android:textColor="@color/canteenYellow"
+            android:gravity="center"/>
+
+
+        <ImageButton
+      android:background="@drawable/transaction"
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+       android:layout_below="@+id/image_expense"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="All Transaction"
+        android:id="@+id/image_transaction"
+        />
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/image_transaction"
+            android:id="@+id/txt_image_transaction"
+            android:text="ALL TRANSACTION"
+            android:textColor="@color/canteenYellow"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:background="@drawable/setting"
+            android:layout_width="180dp"
+            android:layout_height="140dp"
+            android:layout_toRightOf="@id/image_transaction"
+            android:layout_below="@+id/image_expense"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="setting"
+            android:id="@+id/image_setting"
+            />
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txt_image_transaction"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/image_transaction"
+            android:id="@+id/txt_image_setting"
+            android:text="SETTING"
+            android:textColor="@color/canteenYellow"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+   </RelativeLayout>
+ </ScrollView>
+</RelativeLayout>

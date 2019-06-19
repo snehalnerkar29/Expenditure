@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".setting"
+    android:background="@color/black">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="SETTINGS"
+        android:clickable="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:layout_marginTop="10dp"
+        android:textSize="40dp"
+        android:id="@+id/settings"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REMINDER:"
+        android:clickable="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="40dp"
+        android:textSize="25dp"
+        android:id="@+id/rem"
+        android:layout_alignBottom="@+id/rem1"
+        android:layout_alignStart="@+id/version" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/edittext"
+        android:id="@+id/rem1"
+        android:layout_below="@+id/settings"
+        android:layout_toEndOf="@+id/rem"
+        android:layout_marginRight="20dp"/>
+    <View
+        android:layout_width="700dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25sp"
+        android:background="@color/white"
+        android:id="@+id/v2"
+        android:layout_below="@id/rem"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTACT US"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="25dp"
+        android:id="@+id/contactus"
+        android:layout_below="@id/v2"/>
+    <View
+        android:layout_width="700dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25sp"
+        android:background="@color/white"
+        android:id="@+id/v3"
+        android:layout_below="@id/contactus"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VERSION:"
+        android:clickable="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="25dp"
+        android:id="@+id/version"
+        android:layout_below="@id/v3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.0.28"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_above="@+id/v4"
+        android:layout_alignStart="@+id/wp_btn" />
+    <View
+        android:layout_width="700dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:id="@+id/v4"
+        android:layout_below="@id/version"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHARE"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:id="@+id/share"
+        android:layout_alignBaseline="@+id/wp_btn"
+        android:layout_alignBottom="@+id/wp_btn"
+        android:layout_toStartOf="@+id/settings" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@id/share"
+        android:layout_marginTop="365dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/wp"
+        android:id="@+id/wp_btn"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@id/wp_btn"
+        android:layout_marginTop="365dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/gmail"
+        android:id="@+id/msg"
+        android:autoLink="email"/>
+    <View
+        android:layout_width="700dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:background="@color/white"
+        android:id="@+id/v5"
+        android:layout_below="@id/share"/>
+
+
+
+
+
+
+</RelativeLayout>

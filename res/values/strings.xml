@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Daily Expense</string>
+    <string-array name="occupation">
+    <item>Business</item>
+        <item>Loan</item>
+        <item>Salary</item>
+    </string-array>
+
+    <string-array name="payment_mode">
+        <item>Cash</item>
+        <item>Credit Card</item>
+        <item>Debit card</item>
+        <item>Net Banking</item>
+    </string-array>
+
+    <string-array name="thing">
+        <item>Cloths</item>
+        <item>Drinks</item>
+        <item>Education</item>
+        <item>Food</item>
+        <item>Fun</item>
+        <item>Hospital</item>
+        <item>Hotel</item>
+        <item>Medical</item>
+        <item>Movie</item>
+        <item>Personal</item>
+        <item>Pets</item>
+        <item>Shopping</item>
+        <item>Transport</item>
+
+    </string-array>
+
+    <string-array name="pay_mode">
+        <item>Cash</item>
+        <item>Credit Card</item>
+        <item>Debit card</item>
+        <item>Net Banking</item>
+    </string-array>
+
+</resources>
